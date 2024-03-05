@@ -176,9 +176,7 @@ while place_order:
 # Exit the keep ordering question loop
         
 # Complete the order
-    
-
-print(f"Total Price: ${total_price:.2f}")
+ 
 
 
 # Since the customer decided to stop ordering, thank them for
@@ -254,14 +252,3 @@ print(f"Item: {item_name}, Price: {price}, Quantity: {quantity}")
 # and print the prices.
 total_cost = sum(item["Price"] * item["Quantity"] for item in order_list)
 print(f"Total cost of the order: ${total_cost:.2f}")
-
-print("\n--- Your Order ---")
-total_price = 0
-for item in order_list:
-    item_name = item["Item name"]
-    price = item["Price"]
-    quantity = item["Quantity"]
-    item_total = price * quantity
-    total_price += item_total
-    print(f"{item_name} x{quantity}: ${item_total:.2f}")
-
